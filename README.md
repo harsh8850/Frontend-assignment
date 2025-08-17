@@ -151,6 +151,59 @@ npm run build
 ✔ Storybook documentation  
 
 ---
+📝 Approach
+
+The main goal of this project was to build scalable, reusable, and accessible UI components with modern React patterns.
+
+1. Project Setup
+
+Used React + TypeScript to enforce strict typing and catch errors at compile time.
+
+Configured TailwindCSS for utility-first styling and responsiveness.
+
+Added Storybook for component documentation and interactive previews.
+
+Configured Jest + React Testing Library for unit testing.
+
+2. Component Design Principles
+
+Reusability → Both InputField and DataTable were designed with flexible props and multiple states/variants.
+
+Accessibility (a11y) → Added ARIA labels, keyboard navigation, and semantic markup.
+
+Scalability → Components were placed in isolated folders with their own tests, stories, and styles.
+
+Consistency → Followed a unified design system approach (variants, sizes, and themes).
+
+3. InputField Component
+
+Implemented variants (filled, outlined, ghost) and sizes (sm, md, lg) using TailwindCSS classes.
+
+Added validation states (invalid, disabled, loading).
+
+Built optional features: clear button, password toggle, and theme support.
+
+Focused on accessibility: associated label with input, added ARIA attributes for errors and helper text.
+
+4. DataTable Component
+
+Designed a generic table using TypeScript generics (DataTableProps<T>).
+
+Added sortable columns with simple sorting logic.
+
+Implemented row selection with single and multiple modes.
+
+Included loading state (spinner placeholder) and empty state fallback message.
+
+Ensured responsiveness with TailwindCSS (horizontal scrolling on small devices).
+
+5. Documentation & Testing
+
+Storybook stories cover different states, variants, and edge cases.
+
+Added unit tests with Jest to validate rendering, props handling, and interactions.
+
+Ensured code readability with clear naming and separation of concerns.
 
 ## 📄 License  
 This project is licensed under the MIT License.  
